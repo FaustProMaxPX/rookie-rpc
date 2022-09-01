@@ -12,5 +12,6 @@ public class ClientTest {
         CalculateService service = proxy.getService(CalculateService.class);
         CalculateRequest add = new CalculateRequest(1L, 2L, CalMethod.ADD);
         CalculateResponse resp = service.add(add);
+        System.out.println(resp.getResult());
     }
 }
